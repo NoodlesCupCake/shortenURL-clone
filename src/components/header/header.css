@@ -6,4 +6,5 @@ header {
     word-wrap: break-word;
     text-align: center;
     padding:24px 20px 0px;
+    user-select: none;
 }

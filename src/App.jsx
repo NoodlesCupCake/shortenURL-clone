@@ -2,6 +2,7 @@ import './App.css'
 import Cards from './components/cards/cards'
 import ContentCreateAccount from './components/content-input/content-createaccount'
 import ContentInput from './components/content-input/content-input'
+import Footer from './components/footer/footer'
 import Header from './components/header/header'
 import Paragraph from './components/paragraph/paragraph'
 
@@ -15,6 +16,7 @@ function App() {
         <Paragraph/>
         <Cards/>
       </div>
+      <Footer/>
     </>
   )
 }

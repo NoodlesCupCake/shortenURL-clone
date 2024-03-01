@@ -2,6 +2,7 @@ h2#title {
     margin: 15px auto 5px auto;
 }
 
-.container#paragraph {
-    max-width: 780px;
+.paragraph-container {
+    margin: auto;
+    max-width: 720px;
 }
