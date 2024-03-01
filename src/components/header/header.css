@@ -5,6 +5,6 @@ header {
     text-shadow: 0 2px 2px #ddd;
     word-wrap: break-word;
     text-align: center;
-    padding: 40px 20px 25px;
+    padding: 40px 20px 0px;
     width: 100%;
 }

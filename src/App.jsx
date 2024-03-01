@@ -2,6 +2,7 @@ import './App.css'
 import ContentCreateAccount from './components/content-input/content-createaccount'
 import ContentInput from './components/content-input/content-input'
 import Header from './components/header/header'
+import Paragraph from './components/paragraph/paragraph'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className="container">
         <ContentInput/>
         <ContentCreateAccount/>
+        <Paragraph/>
       </div>
     </div>
   )
