@@ -1,4 +1,3 @@
-
 import './paragraph.css'
 
 function Paragraph() {
@@ -23,6 +22,14 @@ function Paragraph() {
             Your shortened URLs can be used in publications, documents, advertisements, blogs, forums, instant messages, and other locations. Track statistics for your business and projects by monitoring the number of hits from your URL with our click counter.
             </p>
         </div>
+        //     <div id="paragraph" className="paragraph-container">
+        //     {PARAGRAPHS.map((item) => (
+        //         <>
+        //         <h2>{item.title}</h2>
+        //             <p>{item.description}</p>
+        //         </>
+        //     ))}
+        //      </div>
     )
   }
   

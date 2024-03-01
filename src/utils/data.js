@@ -31,3 +31,13 @@ export const STRENGTHS = [
     },
 ];
 
+export const PARAGRAPHS = [
+    {
+        title: "Simple and fast URL shortener!",
+        description: "test"
+    },
+    {
+        title: "Shorten, share and track",
+        description: "Your shortened URLs can be used in publications, documents, advertisements, blogs, forums, instant messages, and other locations. Track statistics for your business and projects by monitoring the number of hits from your URL with our click counter."
+    },
+]
