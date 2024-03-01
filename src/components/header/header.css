@@ -1,10 +1,9 @@
 header {
-    font: 700 49px asap, arial;
+    font: 900 49px asap, arial;
     color: #0186da;
     letter-spacing: -1px;
     text-shadow: 0 2px 2px #ddd;
     word-wrap: break-word;
     text-align: center;
-    padding: 40px 20px 0px;
-    width: 100%;
+    padding:24px 20px 0px;
 }

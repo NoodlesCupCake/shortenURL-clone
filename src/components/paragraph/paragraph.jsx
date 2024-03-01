@@ -3,7 +3,7 @@ import './paragraph.css'
 
 function Paragraph() {
     return (
-        <div className="container">
+        <div id="paragraph" className="container">
             <h2 id="">Simple and fast URL shortener!</h2>
             <p>
                 ShortURL allows to shorten long links from {' '}

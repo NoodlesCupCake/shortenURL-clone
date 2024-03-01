@@ -10,6 +10,8 @@ function ContentInput() {
                 <div id="formbutton">
                     <input type="submit" value="Shorten URL"/>
                 </div>
+                <ul id="parent" className="shortLinks">
+                </ul>
             </form>
         </div>
         <p className="urlbox-text">
@@ -21,29 +23,29 @@ function ContentInput() {
   )
 }
 
-const form = document.getElementById("form");
-const linkInput = document.getElementById("link");
-const parent = document.getElementById("parent");
+// const form = document.getElementById("form");
+// const linkInput = document.getElementById("link");
+// const parent = document.getElementById("parent");
 
-form.addEventListener("submit", async (e) => {
-    e.preventDefault();
-    const originalLink = linkInput.value;
-    const apiUrl = `https://api.shrtco.de/v2/shorten?url=${originalLink}`;
+// form.addEventListener("submit", async (e) => {
+//     e.preventDefault();
+//     const originalLink = linkInput.value;
+//     const apiUrl = `https://api.shrtco.de/v2/shorten?url=${originalLink}`;
   
-    try{
-      const response = await fetch(apiUrl);
-      const data = await response.json();
-      console.log(data);
-      let link = document.createElement("li");
-      link.className = "output"
-      link.innerHTML = `<a href="${data.result.full_short_link}" target="_blank">${data.result.full_short_link} </a>`;
-      parent.prepend (link);
+//     try{
+//       const response = await fetch(apiUrl);
+//       const data = await response.json();
+//       console.log(data);
+//       let link = document.createElement("li");
+//       link.className = "output"
+//       link.innerHTML = `<a href="${data.result.full_short_link}" target="_blank">${data.result.full_short_link} </a>`;
+//       parent.prepend (link);
   
-    }catch(e){
+//     }catch(e){
       
-      console.error(e);
-    }
+//       console.error(e);
+//     }
   
-  });
+//   });
 
 export default ContentInput
