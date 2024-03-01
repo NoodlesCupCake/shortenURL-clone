@@ -72,6 +72,7 @@ input[type=text], input[type=submit]{
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     box-sizing: border-box;
+    user-select: none;
 }
 
 #formurl input[type="button"],

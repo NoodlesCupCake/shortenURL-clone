@@ -1,5 +1,26 @@
 import './content-input.css'
 
+const handleClick = async () => {
+    const linkInput = document.getElementById("link");
+    const originalLink = linkInput.value;
+    const apiUrl = `https://api.shrtco.de/v2/shorten?url=${originalLink}`;
+    try {
+        const response = await fetch(apiUrl);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        if (data.ok) {
+            alert('Here is your shortened link: ' + data);
+        } else {
+            throw new Error(data.error || 'Unknown error occurred');
+        }
+    } catch (err) {
+        alert('Thanks for even trying!');
+    }
+};
+
+
 function ContentInput() {
   return (
     <section id="urlbox">
@@ -8,10 +29,8 @@ function ContentInput() {
             <form id="form">
                 <input id="link" type="text" placeholder="Enter the link here"/>
                 <div id="formbutton">
-                    <input type="submit" value="Shorten URL"/>
+                    <input type="submit" onClick={handleClick} value="Shorten URL"/>
                 </div>
-                <ul id="parent" className="shortLinks">
-                </ul>
             </form>
         </div>
         <p className="urlbox-text">
