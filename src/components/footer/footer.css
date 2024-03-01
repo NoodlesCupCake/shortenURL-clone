@@ -11,5 +11,10 @@
     left: 0;
     padding: 1rem;
     width: 100%;
+    text-align: center;
     
+}
+
+#hyperlink {
+    font: 17px "source sans pro", arial;
 }
