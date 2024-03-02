@@ -1,9 +1,7 @@
-p {
-    font: 15px "source sans pro", arial;
-    color: #202020;
-    line-height: 1.5;
-    padding: 0 0 0 2px;
+input:focus {
+    outline: none;
 }
+
 
 #form {
     display: table;

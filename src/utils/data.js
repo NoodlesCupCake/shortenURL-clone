@@ -34,7 +34,7 @@ export const STRENGTHS = [
 export const PARAGRAPHS = [
     {
         title: "Simple and fast URL shortener!",
-        description: "test"
+        description: "some text"
     },
     {
         title: "Shorten, share and track",

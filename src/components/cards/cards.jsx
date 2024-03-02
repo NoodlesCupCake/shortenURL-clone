@@ -7,7 +7,7 @@ function Cards() {
         {STRENGTHS.map((item, index)=> (
         <div className="a-card" key={item.title} id={index}>
             <img src={item.image} alt={item.title}/>
-            <h3>{item.title}</h3>
+            <h3 id="item-title">{item.title}</h3>
             <p id="item-description">{item.description}</p>
         </div>
         ))}

@@ -1,6 +1,7 @@
 import './content-input.css'
 
-const handleClick = async () => {
+const handleSubmit = async (e) => {
+    e.preventDefault();
     const linkInput = document.getElementById("link");
     const originalLink = linkInput.value;
     const apiUrl = `https://api.shrtco.de/v2/shorten?url=${originalLink}`;
@@ -25,11 +26,11 @@ function ContentInput() {
   return (
     <section id="urlbox">
         <h1>Paste the URL to be shortened</h1>
-        <div id="formurl">
+        <div id="formurl" onSubmit={handleSubmit}>
             <form id="form">
-                <input id="link" type="text" placeholder="Enter the link here"/>
+                <input id="link" type="text" placeholder="Enter the link here" required/>
                 <div id="formbutton">
-                    <input type="submit" onClick={handleClick} value="Shorten URL"/>
+                    <input type="submit" value="Shorten URL"/>
                 </div>
             </form>
         </div>

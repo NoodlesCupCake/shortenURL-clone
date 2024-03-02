@@ -4,12 +4,6 @@ body {
   background: #f9f9f9;
   font: 14px asap, arial;
 }
-h1 {
-  margin: 0 0 -10px 0;
-  font: bold 36px asap, arial;
-  color: #555;
-  letter-spacing: -1px;
-}
 h2 {
   margin: 0 0 -10px 0;
   font: bold 26px asap, arial;
@@ -28,89 +22,6 @@ p {
   line-height: 1.5;
   text-align: left;
   padding: 0 0 0 2px;
-}
-a {
-  color: #006cff;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-b {
-  opacity: 0.95;
-}
-ul {
-  font: 17px "source sans pro", arial;
-  color: #202020;
-  line-height: 1.5;
-  text-align: left;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-li {
-  font: 17px "source sans pro", arial;
-  color: #202020;
-  line-height: 1.5;
-  text-align: left;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-br {
-  clear: both;
-}
-.h5 {
-  clear: both;
-  display: block;
-  content: "";
-  height: 5px;
-}
-.h10 {
-  clear: both;
-  display: block;
-  content: "";
-  height: 10px;
-}
-.h15 {
-  clear: both;
-  display: block;
-  content: "";
-  height: 15px;
-}
-.h20 {
-  clear: both;
-  display: block;
-  content: "";
-  height: 20px;
-}
-.colorred {
-  color: red;
-}
-.mw450 {
-  max-width: 450px !important;
-}
-.mw450dblock {
-  max-width: 450px !important;
-  display: block !important;
-}
-.w100mw300 {
-  width: 100%;
-  max-width: 300px;
-}
-.w100mw300h80 {
-  width: 100%;
-  max-width: 300px;
-  height: 80px;
-}
-.w100mw40 {
-  width: 100%;
-  max-width: 40px;
-}
-.p050 {
-  padding: 0 50px;
 }
 
 :root {
@@ -167,23 +78,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-.container {
-  max-width: 758px;
-  margin: 30px auto 20px;
-  padding: 0px 0 20px 0;
 }
